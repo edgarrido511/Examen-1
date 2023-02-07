@@ -7,8 +7,8 @@ public class Examen {
 		//a.fizzBuzz();
 		//a.primeraMayuscula();
 		//a.invertirCadena();
-		//a.vocalesMayuscula();
-		a.palindromo();
+		a.vocalesMayuscula();
+		//a.palindromo();
 	}
 	
 	public static void fizzBuzz() {
@@ -45,38 +45,13 @@ public class Examen {
 	}
 	public static void vocalesMayuscula() {
 		String frase = "Hasta luego cocodrilo";
-		String mayuscula = "";
-		String newMayuscula;
-		String letras = "";
 		String[] sep = frase.split("");
-		for(int i = 0;i<sep.length;i++) {
-			if(sep[i].contains("a")){
-				mayuscula = sep[i];
-				newMayuscula = mayuscula.toUpperCase();
-				sep[i] = newMayuscula;
-			}
-			if(sep[i].contains("e")){
-				mayuscula = sep[i];
-				newMayuscula = mayuscula.toUpperCase();
-				sep[i] = newMayuscula;
-			}
-			if(sep[i].contains("i")){
-				mayuscula = sep[i];
-				newMayuscula = mayuscula.toUpperCase();
-				sep[i] = newMayuscula;
-			}
-			if(sep[i].contains("o")){
-				mayuscula = sep[i];
-				newMayuscula = mayuscula.toUpperCase();
-				sep[i] = newMayuscula;
-			}
-			if(sep[i].contains("u")){
-				mayuscula = sep[i];
-				newMayuscula = mayuscula.toUpperCase();
-				sep[i] = newMayuscula;
-			}
-			System.out.print(sep[i]);
-		}
+		frase = frase.replace("a", "A");
+		frase = frase.replace("e", "E");
+		frase = frase.replace("i", "I");
+		frase = frase.replace("o", "O");
+		frase = frase.replace("u", "U");
+		System.out.println(frase);
 	}
 	public static void palindromo() {
 		String frase = "anita lava la tina";
