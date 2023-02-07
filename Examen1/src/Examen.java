@@ -7,7 +7,7 @@ public class Examen {
 		//a.fizzBuzz();
 		//a.primeraMayuscula();
 		//a.invertirCadena();
-		a.vocalesMayuscula();
+		//a.vocalesMayuscula();
 		//a.palindromo();
 	}
 	
